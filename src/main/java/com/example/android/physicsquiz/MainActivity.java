@@ -61,7 +61,7 @@ protected void onCreate(Bundle savedInstanceState) {
     public void displayScore(int score, String name) {
         String toastMessage = name + " Your result is: " + String.valueOf(score) + " out of 5 points!";
         if (score == 5) {
-            Toast.makeText(this, "Congratulation" + name + " your score is 5. Well done!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Congratulation " + name + " your score is 5. Well done!", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT).show();
         }
