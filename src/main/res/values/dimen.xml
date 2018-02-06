@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="linearLayoutSideMargin">20dp</dimen>
+    <dimen name="marginBetweenViews">10dp</dimen>
+    <dimen name="marginForQuestions">25dp</dimen>
+    <dimen name="paddingLeft">10dp</dimen>
+    <dimen name="paddingCheckBox">30dp</dimen>
+    <dimen name="marginBottomOfRadioGroup">30dp</dimen>
+    <dimen name="lineHeight">1dp</dimen>
+    <dimen name="lineMargin">10dp</dimen>
+    <dimen name="marginOfBox">30dp</dimen>
+    <dimen name="buttonsMargin">8dp</dimen>
+
+
+
+
+
+    <dimen name="titleTextSize">25sp</dimen>
+    <dimen name="subTextSize">20sp</dimen>
+    <dimen name="normalTextSize">18sp</dimen>
+    <dimen name="buttonsTextSize">22sp</dimen>
+
+
+
+    <dimen name="paddingRelative">12dp</dimen>
+    <dimen name="margin8questions">8dp</dimen>
+
+
+    <dimen name="imagemarginbottom">6dp</dimen>
+
+    <dimen name="buttonsLinearMargin">8dp</dimen>
+
+
+</resources>

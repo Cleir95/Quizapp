@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="app_name">Quiz App</string>
+    <string name="title">The Physics Quiz</string>
+    <string name="welcome">Welcome</string>
+    <string name="name">Please enter your name here</string>
+    <string name="startMessage">Let\'s Start!</string>
+
+    <string name="question1">Question 1</string>
+    <string name="q1">Movement of cold air from land towards sea is called:</string>
+    <string name="q1A">Wind Energy</string>
+    <string name="q1B">Planetary Wind</string>
+    <string name="q1C">Land Breeze</string>
+    <string name="q1D">Sea Breeze</string>
+
+    <string name="question2">Question 2</string>
+    <string name="q2">Movement of cold air from sea towards land is called:</string>
+    <string name="q2A">Wind Energy</string>
+    <string name="q2B">Planetary Wind</string>
+    <string name="q2C">Land Breeze</string>
+    <string name="q2D">Sea Breeze</string>
+
+
+    <string name="question3">Question3</string>
+    <string name="q3"> Select two examples for convection:</string>
+    <string name="q3A">Land and sea breezes</string>
+    <string name="q3B"> Heating a tin can of water using a Bunsen burner</string>
+    <string name="q3C">Central heating system in buildings</string>
+    <string name="q3D">Warming back muscles with a heating pad</string>
+
+    <string name="question4">Question 4</string>
+    <string name="q4"> First man who came up with idea of gravity was</string>
+    <string name="q4A">Cleir Mathew</string>
+    <string name="q4B">John Napier</string>
+    <string name="q4C">Henry Briggs</string>
+    <string name="q4D">Isaac Newton</string>
+
+    <string name="question5">Question 5</string>
+    <string name="q5">The operating principle of hydraulic press is</string>
+    <string name="q5A">Law of gravitation</string>
+    <string name="q5B">Boyle’s law</string>
+    <string name="q5C">Pascal law</string>
+    <string name="q5D">Archimedes principle</string>
+
+    <string name="submit">Submit</string>
+
+
+    <string name="congrats">Congratulations" "</string>
+    <string name="scoremessagestart">!\nYour score is &#160;</string>
+    <string name="scoremesaaageend">&#160; points out of&#160;</string>
+    <string name="messagewrongstart">Sorry" "</string>
+    <string name="messagewrongstart2">,\nYou received" "</string>
+    <string name="messagewrongmid">" "points out of" "</string>
+    <string name="messagewrongend">.\nTry again.</string>
+
+    <string name="reset">Reset</string>
+</resources>
+

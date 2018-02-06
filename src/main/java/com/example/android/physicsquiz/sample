@@ -1,0 +1,334 @@
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
+import android.net.Uri;
+import android.view.Display;
+import android.view.View;
+import android.widget.RadioButton;
+import android.widget.TextView;
+import android.content.Context;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
+
+
+public class MainActivity extends AppCompatActivity {
+
+    /**
+     * physics general quiz app
+     */
+    private static final int MAX_SCORE = 5;
+    Intent intent = new Intent(Intent.ACTION_SENDTO);
+    /*
+My food
+    private int score;
+    private int result;
+
+{
+        startActivity(intent);
+    }
+
+    displayMessage(result);
+getPackageManager()
+intent.setData(Uri.parse(“mailto:”));
+intent.putExtra(intent.EXTRA_SUBJECT, “
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+    }*
+     * This method is called when submit button is clicked.
+     */
+
+    public void submitAnswers(View view) {
+
+
+        EditText name = (EditText) findViewById(R.id.name);
+        String editName = name.getText().toString();
+
+
+        RadioButton landBreeze = (RadioButton) findViewById(R.id.q1_C);
+        boolean answer1 = landBreeze.isChecked();
+
+        RadioButton seaBreeze = (RadioButton) findViewById(R.id.q2_D);
+        boolean answer2 = seaBreeze.isChecked();
+
+        CheckBox breeze = (CheckBox) findViewById(R.id.q3_A);
+        boolean answer3a = breeze.isChecked();
+
+        CheckBox heating = (CheckBox) findViewById(R.id.q3_C);
+        boolean answer3c = heating.isChecked();
+
+        RadioButton newton = (RadioButton) findViewById(R.id.q4_D);
+        boolean answer4 = newton.isChecked();
+
+
+        RadioButton pascal = (RadioButton) findViewById(R.id.q5C);
+        boolean answer5 = pascal.isChecked();
+
+
+        score = calculateScore(answer1, answer2, answer3a, answer3c, answer4, answer5);
+
+        Context context = getApplicationContext();
+        CharSequence text = getString(R.string.congrats) + editName + getString(R.string.scoremessagestart)
+                + score + getString(R.string.scoremesaaageend) + MAX_SCORE;
+
+        Context contextwrong = getApplication();
+        CharSequence textwrong = getString(R.string.messagewrongstart) + editName + getString(R.string.messagewrongstart2)
+                + score + getString(R.string.messagewrongmid) + MAX_SCORE + getString(R.string.messagewrongend);
+
+
+        if (score >= 5) {
+            Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(contextwrong, textwrong, Toast.LENGTH_LONG).show();
+        }
+
+    }
+
+    Quizz”);
+intent.putExtra(intent.EXTRA_TEXT,result);
+if(intent.resolveActivity(
+
+    /**
+     * this method to calculate the score and return it
+     *
+     * @return return the score
+     */
+
+    private int calculateScore(boolean answer1, boolean answer2, boolean answer3a, boolean answer3b, boolean answer4, boolean answer5) {
+
+
+        if (answer1) {
+            result++;
+        }
+        if (answer2) {
+            result++;
+        }
+        if (answer3a && answer3b) {
+            result++;
+        }
+
+        if (answer4) {
+            result++;
+        }
+
+        if (answer5) {
+            result++;
+        }
+
+        return result;
+
+    })!=null)
+
+    /**
+     * this method to reset the app and clear all checkboxes, radio groups, and editText.
+     *
+     * @param view
+     */
+
+    public void resetQuiz(View view) {
+
+        //clear edit text
+        EditText username = (EditText) findViewById(R.id.name);
+        username.getText().clear();
+
+        //clear radio groups
+        RadioGroup group1 = findViewById(R.id.radioA);
+        group1.clearCheck();
+
+        RadioGroup group2 = findViewById(R.id.radioB);
+        group2.clearCheck();
+
+        RadioGroup group3 = findViewById(R.id.radioB);
+        group3.clearCheck();
+
+        RadioGroup group4 = findViewById(R.id.radioB);
+        group4.clearCheck();
+
+        RadioGroup group5 = findViewById(R.id.radioC);
+        group5.clearCheck();
+
+
+    }
+}
+
+
+}
+
+
+<Button
+                android:id="@+id/reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/buttonsMargin"
+                android:layout_marginRight="@dimen/buttonsMargin"
+                android:layout_weight="1"
+                android:background="@color/buttons"
+                android:onClick="resetQuiz"
+                android:text="@string/reset"
+                android:textSize="@dimen/buttonsTextSize" />
+
+            <!--reset button-->
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/buttonsMargin"
+                android:layout_marginRight="@dimen/buttonsMargin"
+                android:layout_weight="1"
+                android:background="@color/buttons"
+                android:onClick="submit"
+                android:text="@string/submit"
+                android:textSize="@dimen/buttonsTextSize" />
+
+
+
+
+
+                public class MainActivity extends AppCompatActivity {
+                private int score=0;
+                private int result;
+
+                    RadioButton landBreeze = findViewById(R.id.q1_C);
+                    RadioButton seaBreeze = findViewById(R.id.q2_D);
+                    RadioButton breeze = findViewById(R.id.q3_A);
+                    RadioButton heating = findViewById(R.id.q3_C);
+                    RadioButton newton = findViewById(R.id.q4_D);
+                    RadioButton pascal = findViewById(R.id.q5C);
+
+                @Override
+                protected void onCreate(Bundle savedInstanceState) {
+                        super.onCreate(savedInstanceState);
+                        setContentView(R.layout.activity_main);
+                        }
+
+                public void submit(View view){
+
+                        if (landBreeze.isChecked()){
+                        score++;
+                        }
+                        if (seaBreeze.isChecked()){
+                        score++;
+                        }
+                        if (breeze.isChecked() && heating.isChecked()) {
+                        score++;
+                        }
+                    if (newton.isChecked()){
+                        score++;
+                        }
+                    if (pascal.isChecked()){
+                        score++;
+                        }
+                    displayScore(score);
+                        }
+
+
+
+
+
+                    public void displayScore(int score) {
+                        String toastMessage = "Your result is: " + String.valueOf(score) + " out of 5 points!";
+                        if (score == 5) {
+                            Toast.makeText(this, "Congratulation, your score is 5. You have won 2 tickets to Albertina Museum", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT).show();
+                        }
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Third Question-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginBetweenViews"
+            android:background="@drawable/questionbackground2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginForQuestions"
+                android:text="@string/question2"
+                android:textColor="@color/White"
+                android:textSize="@dimen/subTextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginForQuestions"
+                android:layout_marginLeft="@dimen/marginForQuestions"
+                android:layout_marginRight="@dimen/marginForQuestions"
+                android:paddingLeft="@dimen/paddingLeft"
+                android:text="@string/q3"
+                android:textColor="@color/White"
+                android:textSize="@dimen/subTextSize" />
+
+
+                <checkBox
+                    android:id="@+id/q3_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q3A"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/normalTextSize" />
+
+                <checkBox
+                    android:id="@+id/q3_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q3B"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/normalTextSize" />
+
+                <checkBox
+                    android:id="@+id/q3_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q3C"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/normalTextSize" />
+
+                <checkBox
+                    android:id="@+id/q3_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q3D"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/normalTextSize"
+                    android:layout_marginBottom="@dimen/marginBottomOfRadioGroup"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineHeight"
+            android:layout_margin="@dimen/viewMargin"
+            android:background="@color/grey">
+
+        </View>
