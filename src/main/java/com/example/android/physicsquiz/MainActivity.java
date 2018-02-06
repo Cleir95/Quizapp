@@ -71,6 +71,8 @@ protected void onCreate(Bundle savedInstanceState) {
 
 
     public void reset(View view) {
+        // resetscore to 0
+        score=0;
 
         //clear edit text
         EditText Editname = (EditText) findViewById(R.id.name);
@@ -102,14 +104,11 @@ protected void onCreate(Bundle savedInstanceState) {
         RadioGroup group2 = findViewById(R.id.radioB);
         group2.clearCheck();
 
-        RadioGroup group3 = findViewById(R.id.radioB);
+        RadioGroup group3 = findViewById(R.id.radioC);
         group3.clearCheck();
 
         RadioGroup group4 = findViewById(R.id.radioE);
         group4.clearCheck();
-
-        RadioGroup group5 = findViewById(R.id.radioE);
-        group5.clearCheck();
 
 
     }
