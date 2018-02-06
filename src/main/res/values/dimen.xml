@@ -22,13 +22,6 @@
 
 
 
-    <dimen name="paddingRelative">12dp</dimen>
-    <dimen name="margin8questions">8dp</dimen>
-
-
-    <dimen name="imagemarginbottom">6dp</dimen>
-
-    <dimen name="buttonsLinearMargin">8dp</dimen>
 
 
 </resources>
